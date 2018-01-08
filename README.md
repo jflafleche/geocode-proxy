@@ -13,7 +13,7 @@ The following describes how to install geocode-proxy from GitHub.
 
 ### GitHub Install
 ```bash
-$ git clone https://github.com/TODO
+$ git clone https://github.com/jflafleche/geocode-proxy
 $ cd geocode-proxy
 $ virtualenv -p python3 venv
 $ source venv/bin/activate
