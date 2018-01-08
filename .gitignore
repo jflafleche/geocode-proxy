@@ -39,3 +39,6 @@ ENV/
 
 # credentials
 config.json
+
+# editor
+.vscode/
