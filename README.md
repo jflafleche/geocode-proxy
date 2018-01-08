@@ -6,7 +6,7 @@ the event that the main provider is unavailable.
 
 Geocode-Proxy currently supports `Google`, `Bing` and `Here` geocode services.
 
-Documentation: [geocode-proxy.readthedocs.org](geocode-proxy.readthedocs.org)
+Documentation: [geocode-proxy.readthedocs.org](http://geocode-proxy.readthedocs.org)
 
 ## Getting Started
 The following describes how to install geocode-proxy from GitHub.
@@ -51,5 +51,5 @@ $ touch config.json
 ```
 
 ## Documentation
-Please visit [geocode-proxy.readthedocs.org](geocode-proxy.readthedocs.org) 
+Please visit [geocode-proxy.readthedocs.org](http://geocode-proxy.readthedocs.org) 
 for further details.
