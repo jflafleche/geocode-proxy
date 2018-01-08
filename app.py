@@ -5,6 +5,7 @@ from flask import Flask, request, abort, make_response, jsonify
 
 from providers import Providers
 
+
 app = Flask(__name__)
 
 providers = Providers()
@@ -22,14 +23,14 @@ def get_latlng_by_address(address):
 def get_latlng(address):
     if not address:
         abort(400, 'Please provide an address.')
-    
+
     return get_latlng_by_address(address)
 
 @app.route('/', methods=['POST'])
 def post_latlng():
     if not (request.json and request.json.get('address')):
         abort(400, 'Please provide an address.')
-    
+
     return get_latlng_by_address(request.json['address'])
 
 @app.errorhandler(404)
@@ -37,6 +38,7 @@ def post_latlng():
 @app.errorhandler(502)
 def not_found(error):
     return make_response(jsonify({'error': error.description}), error.code)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

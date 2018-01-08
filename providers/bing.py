@@ -1,9 +1,16 @@
 # coding: utf8
 
+from __future__ import absolute_import
 import json
-from urllib.request import urlopen
-from urllib.parse import urlencode
-from urllib.error import URLError
+
+try:
+    from urllib2 import urlopen
+    from urllib2 import URLError
+    from urllib import urlencode
+except ImportError:
+    from urllib.request import urlopen
+    from urllib.error import URLError
+    from urllib.parse import urlencode
 
 from providers.location_response import LocationResponse
 
