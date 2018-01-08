@@ -36,3 +36,6 @@ docs/_build/
 .venv
 venv/
 ENV/
+
+# credentials
+config.json
